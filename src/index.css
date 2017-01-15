@@ -4,8 +4,8 @@ body {
   margin-top: 50px;
   padding: 0;
   font-family: Futura;
-  background-color: #D74566;
-  color: #FFF;
+  background-color: #5A7684;
+  color: #C5D1EB;
 }
 
 .board {
@@ -48,23 +48,30 @@ body {
 }
 
 .empty {
-  background-color: rgba(255,255,255,.5);
+  background-color: rgba(197,209,235,.5);
 }
 
 .playerOne {
-  background-color: #000;
+  background-color: #C5D1EB;
   transition: 1s ease all;
 }
 
 .playerTwo {
-  background-color: #FFF;
+  background-color: #1F2F16;
   transition: 1s ease all;
+}
+
+.playerOne.winner {
+  background-color: #92AFD7;
+}
+
+.playerTwo.winner {
+  background-color: #395B50;
 }
 
 .winner {
   top: 9%;
   left: 9%;
-  background-color: blue;
   -webkit-animation: spin1 1.5s infinite linear;
 }
 
