@@ -32,7 +32,7 @@ export default class Position extends React.Component {
     if (this.props.winPositions) {
       for (let i = 0; i < this.props.winPositions.length; i++) {
         if (this.props.winPositions[i].row === this.props.rowIndex && this.props.winPositions[i].column === this.props.colIndex) {
-          return ' winner';
+          return 'winner';
         }
       }
     } else {

@@ -14,12 +14,6 @@ export default class App extends React.Component {
             [0,0,0,0,0,0,0],
             [0,0,0,0,0,0,0],
             [0,0,0,0,0,0,0]]
-    // board: [[2,1,2,2,1,2,0],
-    //         [1,2,1,1,2,1,2],
-    //         [2,1,2,2,1,1,2],
-    //         [1,1,1,2,2,1,1],
-    //         [1,2,2,2,1,2,2],
-    //         [1,1,2,1,1,2,1]]
   }
 
   _handleClick(value, positionIndex) {
@@ -92,7 +86,6 @@ export default class App extends React.Component {
         winPositions.push({row : row, column: i});
 
         if (count === 4) {
-          this.setState({winner: true});
           return winPositions;
         }
       } else {
@@ -112,7 +105,6 @@ export default class App extends React.Component {
         winPositions.push({row : i, column: column});
 
         if (count === 4) {
-          this.setState({winner: true});
           return winPositions;
         }
       } else {
@@ -140,7 +132,6 @@ export default class App extends React.Component {
         winPositions.push({row : r, column: c});
 
         if (count === 4) {
-          this.setState({winner: true});
           return winPositions;
         }
       } else {
@@ -168,7 +159,6 @@ export default class App extends React.Component {
         winPositions.push({row : r, column: c});
 
         if (count === 4) {
-          this.setState({winner: true});
           return winPositions;
         }
       } else {
